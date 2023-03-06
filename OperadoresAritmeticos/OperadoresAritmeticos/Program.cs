@@ -1,6 +1,4 @@
-﻿using System.Text.RegularExpressions;
-
-namespace Course
+﻿namespace Course
 {
     class Program
     {
