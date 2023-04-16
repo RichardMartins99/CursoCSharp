@@ -40,7 +40,7 @@ namespace Course
             int idade = int.Parse(vet[2]);
             double altura = double.Parse(vet[3], CultureInfo.InvariantCulture);
 
-            Console.WriteLine("voce digitou: ", n1);
+            Console.WriteLine("voce digitou: " + n1);
             Console.WriteLine(ch);
             Console.WriteLine(n2.ToString("F2", CultureInfo.InvariantCulture));
             Console.WriteLine(nome);
