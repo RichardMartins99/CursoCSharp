@@ -27,6 +27,21 @@ namespace ProblemaSemOrientacaoObjetos
             Console.WriteLine($"Área de X = {areaX.ToString("F4", CultureInfo.InvariantCulture)}");
             Console.WriteLine($"Área de Y = {areaY.ToString("F4", CultureInfo.InvariantCulture)}");
 
+            if(areaX != areaY)
+            {
+                if(areaX > areaY)
+                {
+                    Console.WriteLine("Area Maior: X");
+                }
+                else
+                {
+                    Console.WriteLine("Area Maior: Y");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Areas são iguais");
+            }
         }
     }
 }
