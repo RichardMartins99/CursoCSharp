@@ -30,7 +30,7 @@ namespace ProblemaEstoque
 
         public void RemoverProdutos(int quantidade)
         {
-
+            Quantidade -= quantidade;
         }
     }
 }
