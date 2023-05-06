@@ -1,12 +1,23 @@
 ﻿using System.Globalization;
 
-namespace ProblemaEstoque
+namespace ConstrutoresESobrecarga
 {
     class Produto
     {
         public string Nome;
         public double Preco;
         public int Quantidade;
+
+        public Produto(int quantidade)
+        {
+            Quantidade = quantidade;
+        }
+
+        public Produto(string nome, double preco, int quantidade) : this(quantidade)
+        {
+            Nome = nome;
+            Preco = preco;
+        }
 
         public double ValorTotalEmEstoque()
         {
@@ -20,7 +31,7 @@ namespace ProblemaEstoque
 
         public void AdicionarProdutos(int quantidade)
         {
-            Quantidade += quantidade; 
+            Quantidade += quantidade;
         }
 
         public void RemoverProdutos(int quantidade)
@@ -29,3 +40,6 @@ namespace ProblemaEstoque
         }
     }
 }
+
+
+
