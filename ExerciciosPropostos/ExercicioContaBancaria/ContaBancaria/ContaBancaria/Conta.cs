@@ -4,28 +4,28 @@
     {
         public int NumeroConta { get; private set; }
         public string NomeTitular { get; set; }
-        private double _saldo;
+        public double Saldo { get; private set; };
 
-        public Conta(int numeroConta, string nomeTitular, double saldo)
+        public Conta(int numeroConta, string nomeTitular, double deposito)
         {
             NumeroConta = numeroConta;
             NomeTitular = nomeTitular;
-            _saldo = saldo;
+            Depositar(deposito);
         }
 
         public void Depositar(double valor)
         {
-            _saldo += valor;
+            Saldo += valor;
         }
 
         public void Saque(double valor)
         {
-            _saldo -= valor + 5;
+            Saldo -= valor + 5;
         }
 
         public override string ToString()
         {
-            return $"Conta: {NumeroConta}, Titular: {NomeTitular}, Saldo: ${_saldo}";
+            return $"Conta: {NumeroConta}, Titular: {NomeTitular}, Saldo: ${Saldo}";
         }
     }
 }
