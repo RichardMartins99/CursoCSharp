@@ -1,18 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace EncapsulamentoEProperties
+﻿namespace EncapsulamentoEProperties
 {
     public class Produto
     {
-        private string _nome { get; set; }
-        private double _preco { get; set; }
-        private int _quantidade { get; set; }
-
-        public Produto() { }
+        private string _nome;
+        //AutoProperties
+        public double Preco { get; private set; }
+        public int Quantidade { get; private set; }
 
         public Produto(
             string nome,
@@ -20,40 +13,31 @@ namespace EncapsulamentoEProperties
             int quantidade) 
         {  
             _nome = nome;
-            _preco = preco;
-            _quantidade = quantidade;
+            Preco = preco;
+            Quantidade = quantidade;
         }
 
-        public string GetNome()
-        {
-            return _nome;
-        }
-
-        public void SetNome(string nome)
-        {
-            if (nome != null && nome.Length > 1) {
-                _nome += nome; 
+        //Properties
+        public string Nome 
+        { 
+            get { return _nome; }
+            set 
+            { 
+                if (value != null && value.Length > 1)
+                {
+                    _nome += value;
+                }
             }
-        }
-
-        public double GetPreco() 
-        { 
-            return _preco;
-        }
-
-        public int GetQuantidade() 
-        { 
-            return  _quantidade;
         }
 
         public void AdicionarProdutos(int quantidade)
         {
-            _quantidade += quantidade;
+            Quantidade += quantidade;
         }
 
         public void RemoverProdutos(int quantidade)
         {
-            _quantidade -= quantidade;
+            Quantidade -= quantidade;
         }
     }
 }
