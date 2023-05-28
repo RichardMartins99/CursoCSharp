@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TipoReferenciaTipoValor", "TipoReferenciaTipoValor\TipoReferenciaTipoValor.csproj", "{160A11C4-E81C-4B5D-A5D0-2E8F7A53525A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{160A11C4-E81C-4B5D-A5D0-2E8F7A53525A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{160A11C4-E81C-4B5D-A5D0-2E8F7A53525A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{160A11C4-E81C-4B5D-A5D0-2E8F7A53525A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{160A11C4-E81C-4B5D-A5D0-2E8F7A53525A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CC8E9C06-E049-41B1-88EC-196CD5869BD0}
+	EndGlobalSection
+EndGlobal
