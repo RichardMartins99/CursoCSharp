@@ -1,6 +1,6 @@
 ﻿using ExercicioVetores;
 
-Console.WriteLine("Quanto quartos vocês quer alugar?");
+Console.WriteLine("Quantos quartos vocês quer alugar?");
 var n = int.Parse(Console.ReadLine());
 
 Cliente[] vect = new Cliente[10];
