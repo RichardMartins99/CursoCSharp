@@ -34,3 +34,22 @@ TimeSpan t9 = TimeSpan.FromSeconds(1.5);
 TimeSpan t10 = TimeSpan.FromMilliseconds(1);
 TimeSpan t11 = TimeSpan.FromMicroseconds(1);
 TimeSpan t12 = TimeSpan.FromTicks(900000000L);//letra "L" para indicar long
+
+//*************************************** Propriedades DateTime
+DateTime dt = new DateTime(2001, 8, 15, 13, 45, 58, 275);
+
+Console.WriteLine(dt);
+Console.WriteLine("1) Date: " + dt.Date);// Desconsidera o horario
+Console.WriteLine("2) Day: " + dt.Day); //Pega o dia da data
+Console.WriteLine("3) DayOfWeek: " + dt.DayOfWeek);
+Console.WriteLine("4) Day: " + dt.Day); 
+Console.WriteLine("5) Day: " + dt.Day); 
+Console.WriteLine("6) Day: " + dt.Day); 
+Console.WriteLine("7) Day: " + dt.Day); 
+Console.WriteLine("8) Day: " + dt.Day); 
+Console.WriteLine("9) Day: " + dt.Day); 
+Console.WriteLine("10) Day: " + dt.Day); 
+Console.WriteLine("11) Day: " + dt.Day); 
+Console.WriteLine("12) Day: " + dt.Day); 
+Console.WriteLine("13) Day: " + dt.Day); 
+
